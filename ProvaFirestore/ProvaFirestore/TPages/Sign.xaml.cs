@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using ProvaFirestore.Model;
+using Acr.UserDialogs;
 
 using Plugin.FirebaseAuth;
 using Plugin.CloudFirestore;
@@ -17,7 +18,6 @@ namespace ProvaFirestore.TPages {
     public partial class Sign : ContentPage {
         public Sign() {
             InitializeComponent();
-
             var user = CrossFirebaseAuth.Current.Instance.CurrentUser;
             CrossFirebaseAuth.Current.Instance.AuthState += (sender, e) => {
                 if (user == null) {
@@ -31,6 +31,8 @@ namespace ProvaFirestore.TPages {
 
         private void Button_Off(object sender, EventArgs e) {
             CrossFirebaseAuth.Current.Instance.SignOut();
+            UserDialogs.Instance.Toast("Logout effettuato", new TimeSpan(3));
+
         }
 
         private void SignUp(object sender, EventArgs e) {
@@ -54,6 +56,7 @@ namespace ProvaFirestore.TPages {
             var result = await CrossFirebaseAuth.Current
                             .Instance
                             .SignInWithEmailAndPasswordAsync(email, pass);
+            UserDialogs.Instance.Toast("Login effettuato", new TimeSpan(3));
         }
 
 
@@ -68,8 +71,11 @@ namespace ProvaFirestore.TPages {
                 await CrossCloudFirestore.Current
                     .Instance
                     .Collection("users")
-                    .AddAsync(new User(nam, sur, nick, em));
-            } catch(Exception e) {
+                    .Document(Useruid)
+                    .SetAsync(new User(nam, sur, nick, em));
+                UserDialogs.Instance.Toast("Registrazione effettuata", new TimeSpan(3));
+
+            } catch (Exception e) {
                 Console.WriteLine(e);
             }
         }
