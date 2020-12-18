@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,13 +11,10 @@ using System.Collections.ObjectModel;
 
 namespace ProvaFirestore {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : ContentPage {
-        public ObservableCollection<User> Users { get; set; }
-        public MainPage() {
+    public partial class Page1 : ContentPage {
+        public Page1() {
             InitializeComponent();
             LoadUtenti();
-
-            
         }
 
         private async Task DeleteUser() {
@@ -50,7 +47,7 @@ namespace ProvaFirestore {
                 // Console.WriteLine("STAMPA UTENTI" + utenti[0].nome);
                 userName.Text = utenti[0].nome;
 
-            } catch(Exception e) {
+            } catch (Exception e) {
                 Console.WriteLine("EXCEPTION " + e);
             }
         }

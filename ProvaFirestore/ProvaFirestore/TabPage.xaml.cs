@@ -9,8 +9,8 @@ using Xamarin.Forms.Xaml;
 
 namespace ProvaFirestore {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage {
-        public Page1() {
+    public partial class TabPage : TabbedPage {
+        public TabPage() {
             InitializeComponent();
         }
     }

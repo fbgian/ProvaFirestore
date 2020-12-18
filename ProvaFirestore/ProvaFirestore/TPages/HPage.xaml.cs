@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ProvaFirestore {
+namespace ProvaFirestore.TPages {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabbedPage1 : TabbedPage {
-        public TabbedPage1() {
+    public partial class HPage : ContentPage {
+        public HPage() {
             InitializeComponent();
         }
     }

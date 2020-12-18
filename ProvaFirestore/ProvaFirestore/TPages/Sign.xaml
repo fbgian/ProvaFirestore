@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProvaFirestore.TPages.Sign">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SIGN IN - SIGN UP PAGE"
+                VerticalOptions="Center" 
+                TextColor="Black"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Inserisci il tuo nome"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   TextColor="Black"/>
+            <Entry Placeholder="Nome"
+                x:Name="userName"
+                VerticalOptions="Start" />
+
+            <Label Text="Inserisci il tuo cognome"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   TextColor="Black"/>
+            <Entry Placeholder="Cognome"
+                x:Name="userSurname"
+                VerticalOptions="Start" />
+            
+            <Label Text="Inserisci il tuo nickname"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   TextColor="Black"/>
+            <Entry Placeholder="Email"
+                x:Name="userNick"
+                VerticalOptions="Start" />
+
+            <Label Text="Inserisci la tua mail"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   TextColor="Black"/>
+            <Entry Placeholder="Email"
+                x:Name="userEmail"
+                   Keyboard="Email"
+                VerticalOptions="Start" />
+            
+            <Label Text="Inserisci la tua password"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   TextColor="Black"/>
+            <Entry IsPassword="True"
+                   x:Name="userPass"
+                   Placeholder="Password"
+                   VerticalOptions="Start"/>
+            
+            <Button Text="Signoff"
+                    Clicked="Button_Off"/>
+            <Button Text="Login"
+                    Clicked="SignIn"/>
+            <Button Text="Registrati"
+                    Clicked="SignUp"/>
+
+            <Label x:Name="logBool"
+                   Text="PRova"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
