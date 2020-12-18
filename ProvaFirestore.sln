@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaFirestore.Android", "ProvaFirestore\ProvaFirestore.Android\ProvaFirestore.Android.csproj", "{24906CDD-E14D-458D-B142-474379AA1250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaFirestore", "ProvaFirestore\ProvaFirestore\ProvaFirestore.csproj", "{6E6B5202-1DF6-4B35-A67E-2DDC79CF7CA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24906CDD-E14D-458D-B142-474379AA1250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24906CDD-E14D-458D-B142-474379AA1250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24906CDD-E14D-458D-B142-474379AA1250}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{24906CDD-E14D-458D-B142-474379AA1250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24906CDD-E14D-458D-B142-474379AA1250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24906CDD-E14D-458D-B142-474379AA1250}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6E6B5202-1DF6-4B35-A67E-2DDC79CF7CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6B5202-1DF6-4B35-A67E-2DDC79CF7CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6B5202-1DF6-4B35-A67E-2DDC79CF7CA1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6E6B5202-1DF6-4B35-A67E-2DDC79CF7CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6B5202-1DF6-4B35-A67E-2DDC79CF7CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6B5202-1DF6-4B35-A67E-2DDC79CF7CA1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5998E44F-283D-4471-BE0C-0733D9807D09}
+	EndGlobalSection
+EndGlobal
